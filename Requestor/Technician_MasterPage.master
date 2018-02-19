@@ -1,0 +1,427 @@
+﻿<%@ Master Language="VB" CodeFile="Technician_MasterPage.master.vb" Inherits="Technician_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 925px;
+            text-align: left;
+        }
+        .style3
+        {
+            text-align: center;
+        }
+        .style4
+        {
+            height: 91px;
+        }
+        .style5
+        {
+            text-align: left;
+            width: 112px;
+        }
+        .style6
+        {
+            text-align: right;
+            width: 112px;
+            height: 6px;
+        }
+        .style7
+        {
+            width: 925px;
+            text-align: left;
+            height: 6px;
+        }
+        .style8
+        {
+            height: 6px;
+        }
+    </style>
+</head>
+<body style="background-color: #0082c8;">
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="plRestricted" runat="server">
+            <table class="style1">
+                <tr>
+                    <td class="style4" colspan="3" style="text-align: center">
+                        <asp:Label ID="lblRestricted" runat="server" Font-Size="55pt" ForeColor="Red" 
+                            Text="Forbidden. You have attempted to enter a restricted area." 
+                            EnableTheming="False" Font-Names="Corbel"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td style="text-align: center">
+                        <asp:Label ID="lblTempUnavailable" runat="server" Enabled="False" 
+                            Font-Size="35pt" ForeColor="Red" Visible="False" EnableTheming="False" 
+                            Font-Names="Corbel">Needed information is 
+                        missing from the database or an Active record does not exist! Please contact an 
+                        administrator and ask that they login to solve the issue.</asp:Label>
+                        <br />
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <asp:Panel ID="plTechnician" runat="server" Visible="False">
+            <table class="style1">
+                <tr>
+                    <td class="style3" colspan="3">
+                        <asp:Label ID="lblTitle" runat="server" EnableTheming="False" 
+                            Font-Names="Bauhaus 93" Font-Size="50pt" ForeColor="White" Visible="False"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style6">
+                        </td>
+                    <td class="style7">
+                        <asp:HyperLink ID="hlLogOut" runat="server" Font-Bold="True" 
+                            Font-Names="Comic Sans MS" Font-Size="Large" Font-Underline="True" 
+                            ForeColor="Red" NavigateUrl="~/Logged_Out.aspx">Log Out</asp:HyperLink>
+                    </td>
+                    <td class="style8">
+                        </td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        <asp:Menu ID="mTechnician" runat="server" DataSourceID="smdsTech" 
+                            Font-Names="Corbel" Font-Size="X-Large" ForeColor="White">
+                            <DynamicHoverStyle BackColor="White" />
+                            <DynamicMenuStyle BackColor="#0082C8" />
+                            <DynamicMenuItemStyle ForeColor="Red" />
+                            <StaticHoverStyle BackColor="Red" />
+                            <items>
+                                <asp:menuitem text="Help" tooltip="Help" />
+                            </items>
+                        </asp:Menu>
+                    </td>
+                    <td class="style2">
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                            <table class="style1">
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                            </table>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        <asp:SiteMapPath ID="smpTechnician" runat="server">
+                            <PathSeparatorStyle ForeColor="White" />
+                            <CurrentNodeStyle ForeColor="White" />
+                            <NodeStyle ForeColor="Red" />
+                        </asp:SiteMapPath>
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        <asp:SqlDataSource ID="sqlBuildingsExists" runat="server" 
+                            ConnectionString="<%$ ConnectionStrings:ServiceRequestConnectionString %>" 
+                            DataSourceMode="DataReader" 
+                            SelectCommand="SELECT * FROM [Buildings] WHERE ([Status] = @Status)">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="Active" Name="Status" Type="String" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        <asp:SqlDataSource ID="sqlDepartmentsExists" runat="server" 
+                            ConnectionString="<%$ ConnectionStrings:ServiceRequestConnectionString %>" 
+                            DataSourceMode="DataReader" 
+                            SelectCommand="SELECT * FROM [Departments] WHERE ([Status] = @Status)">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="Active" Name="Status" Type="String" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        <asp:SqlDataSource ID="sqlTechniciansExists" runat="server" 
+                            ConnectionString="<%$ ConnectionStrings:ServiceRequestConnectionString %>" 
+                            DataSourceMode="DataReader" 
+                            SelectCommand="SELECT * FROM [Technicians] WHERE ([Status] = @Status)">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="Active" Name="Status" Type="String" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style2">
+                        <asp:SiteMapDataSource ID="smdsTech" runat="server" ShowStartingNode="False" />
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </asp:Panel>
+    </div>
+    </form>
+</body>
+</html>

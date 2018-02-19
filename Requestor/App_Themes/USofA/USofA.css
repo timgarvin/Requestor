@@ -1,0 +1,57 @@
+﻿body 
+{
+    background-color: #0082c8;
+}
+
+td
+{
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: x-large;
+}
+
+.RedWhiteBlueTableRow
+{
+    color: white;
+    font-family: Corbel;
+    font-size: 12pt;
+}
+
+.RedWhiteBlueTable th
+{
+    background-color: white;
+    border-color: White;
+    font-family: Comic Sans MS;
+    font-size: 14pt;
+}
+
+.RedWhiteBlueTable
+{
+	font-family: Corbel;
+    font-size: 12pt;
+	border-right: white 2pt solid;
+    border-top: white 2pt solid;
+    border-left: white 2pt solid;
+    border-bottom: white 2pt solid;
+    border-collapse: separate;
+    margin: 2pt;
+}
+
+.RedWhiteBlue td
+{
+	font-family: Corbel;
+    font-size: 12pt;
+	border-right: white;
+    border-top: white;
+    border-left: white;
+    border-bottom: white;
+    border-collapse: separate;
+    margin: 2pt;
+}
+
+.LabelAlternate
+{
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: x-large;
+}

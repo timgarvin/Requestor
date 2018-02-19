@@ -1,0 +1,37 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Button runat="server" BackColor="Red" BorderColor="White" Font-Bold="True" Font-Names="Corbel" Font-Size="14pt" ForeColor="White" />
+    
+<asp:Label runat="server" Font-Names="Bauhaus 93" Font-Size="Large" ForeColor="#FFFFFF" />
+    
+<asp:RadioButton runat="server" Font-Names="Bauhaus 93" Font-Size="Medium" ForeColor="#FFFFFF" />
+    
+<asp:GridView runat="server" CssClass="RedWhiteBlueTable" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BorderColor="White" >
+    <RowStyle CssClass="RedWhiteBlueTable td" />
+    <PagerStyle CssClass="RedWhiteBlueTable th" HorizontalAlign="Center" />
+    <HeaderStyle CssClass="RedWhiteBlueTable th" ForeColor="Red" />
+    <EditRowStyle BorderColor="White" />
+</asp:GridView>
+
+<asp:Calendar runat="server" ShowGridLines="True" BorderColor="White" BorderStyle="Solid" BorderWidth="2px" Font-Names="Corbel" 
+    ForeColor="White">
+    <SelectedDayStyle BackColor="Red" ForeColor="White" />
+    <DayStyle BorderColor="White" Font-Names="Corbel" Font-Size="14pt" />
+    <NextPrevStyle BackColor="Red" />
+    <DayHeaderStyle BorderColor="White" Font-Names="Corbel" Font-Size="16pt" ForeColor="Red" />
+    <TitleStyle BackColor="Red" Font-Size="X-Large" />
+</asp:Calendar>

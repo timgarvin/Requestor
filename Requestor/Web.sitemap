@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Requestor Main Page"  description="Home Page">
+    <siteMapNode url="Administrator_Main.aspx" title="Main Page"  description="Administrator's main page">
+    </siteMapNode>
+    <siteMapNode url="Technician_Main.aspx" title="Main Page"  description="Technician's main page">
+    </siteMapNode>
+    <siteMapNode url="" title="Secure User Accounts"  description="Add, change, or view Administrator/Technician Information">
+      <siteMapNode url="AddUpdate_Administrators.aspx" title="Register/Update Administrators"  description="Register, update, or view an Administrator's information" />
+      <siteMapNode url="AddUpdate_Technicians.aspx" title="Register/Update Technicians"  description="Register, update, or view a Technician's information" />
+    </siteMapNode>
+    <siteMapNode url="" title="Locations"  description="Add, change or view Locations">
+      <siteMapNode url="AddUpdate_Buildings.aspx" title="Add/Update Buildings"  description="Add, change, or view Building information" />
+      <siteMapNode url="AddUpdate_Departments.aspx" title="Add/Update Departments"  description="Add, change, or view Department information" />
+    </siteMapNode>
+    <siteMapNode url="" title="Requests"  description="Change or view Requests">
+      <siteMapNode url="Admin_RequestFind.aspx" title="Search/Browse"  description="Search or browse through solved and unsolved requests not yet archived" />
+      <siteMapNode url="CancelUpdate_Requests.aspx" title="Cancel/Update"  description="Cancel or update requests" />
+    </siteMapNode>
+    <siteMapNode url="" title="Requests"  description="Change or view Requests">
+      <siteMapNode url="Add_Solution.aspx" title="Add Solution"  description="Add the solution to a completed service request" />
+      <siteMapNode url="Tech_RequestFind.aspx" title="Search/Browse"  description="Search or browse through solved and unsolved requests not yet archived" />
+    </siteMapNode>
+    <siteMapNode url="" title="Archive"  description="Change or view the Archive">
+      <siteMapNode url="Archive_Find.aspx" title="Search/Browse"  description="Search or browse through the Archive" />
+      <siteMapNode url="Move_To_Archive.aspx" title="Move Solved Requests"  description="Moves completed and canceled requests to Archive" />
+    </siteMapNode>
+    <siteMapNode url="" title="Printable Reports"  description="Change or view Requests">
+      <siteMapNode url="Archive_Report.aspx" title="Archive"  description="Printable Archive Report" />
+      <siteMapNode url="Solved_Report.aspx" title="Solved Service Requests"  description="Printable Solved Service Requests Report" />
+      <siteMapNode url="Unsolved_Report.aspx" title="Unsolved Pending Service Requests"  description="Printable Unsolved Pending Service Requests" />
+    </siteMapNode>
+    <siteMapNode url="" title="Printable Reports"  description="Change or view Requests">
+      <siteMapNode url="TechSpecific_Report.aspx" title="Unsolved Pending Service Requests (Technician Specific)"  description="Printable Unsolved Pending Service Requests (Technician Specific) Report" />
+    </siteMapNode>
+    <siteMapNode url="" title="Help"  description="Get help with a certain page">
+      <siteMapNode url="Help_CancelRequest.aspx" title="Canceling a Request" description="Get help with canceling a request" />
+    </siteMapNode>
+    <siteMapNode url="" title="Help"  description="Get help with a certain page">
+      <siteMapNode url="Help_AddSolution.aspx" title="Adding a Solution" description="Get help with adding a solution" />
+    </siteMapNode>
+    <siteMapNode url="Admin_About.aspx" title="About"  description="About This Site">
+    </siteMapNode>
+    <siteMapNode url="Tech_About.aspx" title="About"  description="About This Site">
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

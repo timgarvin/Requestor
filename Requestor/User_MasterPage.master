@@ -1,0 +1,343 @@
+﻿<%@ Master Language="VB" CodeFile="User_MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 478px;
+        }
+        .style2
+        {
+            height: 91px;
+            text-align: center;
+        }
+        .style3
+        {
+            width: 968px;
+            text-align: center;
+        }
+        .style6
+        {
+            height: 4px;
+        }
+        .style7
+        {
+            width: 968px;
+            height: 4px;
+            text-align: center;
+        }
+        .style8
+        {
+            height: 11px;
+        }
+        .style9
+        {
+            width: 968px;
+            height: 11px;
+            text-align: left;
+        }
+        .style10
+        {
+            width: 968px;
+            height: 5px;
+            text-align: left;
+        }
+        .style11
+        {
+            height: 5px;
+        }
+        .style12
+        {
+            width: 125px;
+        }
+        .style13
+        {
+            height: 4px;
+            width: 125px;
+        }
+        .style14
+        {
+            height: 11px;
+            width: 125px;
+        }
+        .style15
+        {
+            height: 5px;
+            width: 125px;
+        }
+    </style>
+</head>
+<body style="background-color: #0082c8;">
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td class="style2" colspan="3">
+                    <asp:Label ID="lblTitle" runat="server" EnableTheming="False" 
+                        Font-Names="Bauhaus 93" Font-Size="50pt" ForeColor="White"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style12">
+                    &nbsp;</td>
+                <td class="style3">
+                        <asp:Label ID="lblTempUnavailable" runat="server" 
+                            Font-Size="35pt" ForeColor="Red" Visible="False" EnableTheming="False" 
+                            Font-Names="Corbel"></asp:Label>
+                    </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13">
+                    </td>
+                <td class="style7">
+                    &nbsp;</td>
+                <td class="style6">
+                    </td>
+            </tr>
+            <tr>
+                <td class="style14">
+                    &nbsp;</td>
+                <td class="style9">
+                    <asp:HyperLink ID="hlAdminTechLogin" runat="server" Font-Bold="True" 
+                        Font-Names="Comic Sans MS" Font-Size="Large" Font-Underline="True" 
+                        ForeColor="Red" NavigateUrl="~/Login.aspx">Administrator/Technician&#39;s Login</asp:HyperLink>
+                </td>
+                <td class="style8">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style15">
+                </td>
+                <td class="style10">
+                    <br />
+                </td>
+                <td class="style11">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right" class="style12">
+                    <asp:HyperLink ID="hlHelp" runat="server" Font-Bold="True" 
+                        Font-Names="Comic Sans MS" Font-Size="Large" Font-Underline="True" 
+                        ForeColor="Red" NavigateUrl="~/Help_ServiceRequests.aspx">Help</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="hlAbout" runat="server" Font-Bold="True" 
+                        Font-Names="Comic Sans MS" Font-Size="Large" Font-Underline="True" 
+                        ForeColor="Red" NavigateUrl="~/About.aspx">About</asp:HyperLink>
+                </td>
+                <td class="style3">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <table class="style1">
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
